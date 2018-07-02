@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Members</title>
+        <% include ../_partials/head %>
+    </head>
+    <body>
+        <div id="wrapper">
+            <% include ../_partials/sidebar %>
+            <div id="page-wrapper" class="gray-bg">
+                <% include ../_partials/header %>
+                
+				<div id="append-data"></div>
+                <% include ../_partials/footer %>
+            </div>
+        </div>
+
+        <% include ../_partials/models %>
+		<% include ../_partials/js %>
+		<script src="/js/router.js"></script>
+		<script src="/js/init.js"></script>
+    </body>
+</html>

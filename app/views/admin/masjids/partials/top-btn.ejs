@@ -1,0 +1,13 @@
+<div class="row wrapper border-bottom white-bg page-heading masjids-btn top-nav">
+    <button class="btn btn-outline btn-success dim" data-action="add" type="button">
+        Add Masjid
+    </button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.masjids-btn button').on('click', function() {
+            $('#add-masjid-model').modal({backdrop: "static"});
+        });
+    });
+</script>

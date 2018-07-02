@@ -1,0 +1,35 @@
+<div class="row wrapper border-bottom white-bg page-heading members-btn top-nav">
+    <button class="btn btn-outline btn-success dim" data-action="add" type="button">
+        Add Member 
+    </button>
+    <!--<button class="btn btn-outline btn-success dim" data-src="/members/list" data-title="Members list" type="button"> 
+        <i class="fa fa-list"></i>
+    </button>
+    <button class="btn btn-outline btn-success dim" data-src="/members/grid" data-title="Members"  type="button">
+        <i class="fa fa-th"></i>
+    </button>-->
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.members-btn button').on('click', function() {
+            let data = $(this).data();
+            if (data.action) {
+                $('#add-member-model').modal({backdrop: "static"}); // data-toggle="modal" data-target="#add-member-model"
+            } else {
+                if (data.src) {
+                    let pathname = window.location.pathname;
+                    let origin = window.location.origin;
+                    let href = (data.src == '/members/list') ? '/members' : data.src;
+                    if (pathname != href) {
+                        window.document.title = data.title;
+                        window.history.pushState({}, null, origin+href);
+                        $.get(origin+href, (data) => {
+                            $('#append-data').hide().html(data).fadeIn('normal');
+                        });
+                    }
+                }
+            }
+        });
+    });
+</script>

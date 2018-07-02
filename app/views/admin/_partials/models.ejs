@@ -1,0 +1,201 @@
+<div class="modal inmodal" id="add-member-model" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <!--<i class="fa fa-user modal-icon"></i>-->
+                <h4 class="modal-title">Add New Member</h4>
+            </div>
+            <form action="/members/add/api" action="post" id="add-member-form">
+                <div class="modal-body">
+                    <div class="alert alert-danger alert-dismissable error-reporting">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <a class="alert-link" href="#">Alert Link</a>.
+                    </div>
+                    <div class="form-group">
+                        <label>Fullname *</label> 
+                        <input type="text" placeholder="Member Fullname" id="fullname" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>State *</label>
+                        <select class="form-control m-b" id="states">
+                            <option value="">Loading States...</option>
+                        </select>
+                    </div>
+                    <div class="form-group">
+                        <label>LGA *</label>
+                        <select class="form-control m-b" id="lga"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>E-mail Address</label> 
+                        <input type="email" placeholder="E-mail address" id="email" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Phone Number *</label> 
+                        <input type="tel" placeholder="Phone Number" id="mobile" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>Address *</label> 
+                        <input type="tel" placeholder="Address" id="address" class="form-control">
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button class="sk-spinner sk-spinner-pulse"></button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger btn-outline">Save <i class="fa fa-save"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal inmodal" id="add-masjid-model" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <!--<i class="fa fa-user modal-icon"></i>-->
+                <h4 class="modal-title">New Masjid</h4>
+            </div>
+            <form action="/masjids/add/api" action="post" id="add-masjid-form">
+                <div class="modal-body">
+                    <div class="alert alert-danger alert-dismissable error-reporting">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <a class="alert-link" href="#">Alert Link</a>.
+                    </div>
+                    <div class="form-group">
+                        <label>Masjid Type *</label>
+                        <select class="form-control m-b" id="masjid-types"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Title *</label> 
+                        <input type="text" placeholder="Title" id="masjid-title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>State *</label>
+                        <select class="form-control m-b" id="masjid-states"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>LGA *</label>
+                        <select class="form-control m-b" id="masjid-lga"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Address *</label> 
+                        <input type="tel" placeholder="Address" id="masjid-address" class="form-control">
+                    </div>
+
+                    <fieldset>
+                        <legend>Liman</legend>
+                        <div class="form-group">
+                            <label>Fullname *</label> 
+                            <input type="tel" placeholder="Fullname" id="liman-fullname" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label> 
+                            <input type="tel" placeholder="Phone Number" id="liman-mobile" class="form-control">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Na'ibi</legend>
+                        <div class="form-group">
+                            <label>Fullname *</label> 
+                            <input type="tel" placeholder="Fullname" id="naibi-fullname" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label> 
+                            <input type="tel" placeholder="Phone Number" id="naibi-mobile" class="form-control">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Ladan</legend>
+                        <div class="form-group">
+                            <label>Fullname *</label> 
+                            <input type="tel" placeholder="Fullname" id="ladan-fullname" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label> 
+                            <input type="tel" placeholder="Phone Number" id="ladan-mobile" class="form-control">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button class="sk-spinner sk-spinner-pulse"></button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger btn-outline">Save <i class="fa fa-save"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<div class="modal inmodal" id="add-school-model" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content animated fadeIn">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                <!--<i class="fa fa-user modal-icon"></i>-->
+                <h4 class="modal-title">Add School</h4>
+            </div>
+            <form action="/schools/add/api" action="post" id="add-school-form">
+                <div class="modal-body">
+                    <div class="alert alert-danger alert-dismissable error-reporting">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <a class="alert-link" href="#">Alert Link</a>.
+                    </div>
+                    <div class="form-group">
+                        <label>Title *</label> 
+                        <input type="text" placeholder="Title" id="school-title" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <label>State *</label>
+                        <select class="form-control m-b" id="school-states"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>LGA *</label>
+                        <select class="form-control m-b" id="school-lga"></select>
+                    </div>
+                    <div class="form-group">
+                        <label>Address *</label> 
+                        <input type="tel" placeholder="Address" id="school-address" class="form-control">
+                    </div>
+
+                    <fieldset>
+                        <legend>Headmaster</legend>
+                        <div class="form-group">
+                            <label>Fullname *</label> 
+                            <input type="tel" placeholder="Fullname" id="hm-fullname" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label> 
+                            <input type="tel" placeholder="Phone Number" id="hm-mobile" class="form-control">
+                        </div>
+                    </fieldset>
+
+                    <fieldset>
+                        <legend>Vice Headmaster</legend>
+                        <div class="form-group">
+                            <label>Fullname *</label> 
+                            <input type="tel" placeholder="Fullname" id="vc-fullname" class="form-control">
+                        </div>
+
+                        <div class="form-group">
+                            <label>Phone Number *</label> 
+                            <input type="tel" placeholder="Phone Number" id="vc-mobile" class="form-control">
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="modal-footer">
+                    <button class="sk-spinner sk-spinner-pulse"></button>
+                    <button type="button" class="btn btn-white" data-dismiss="modal">Close</button>
+                    <button type="submit" class="btn btn-danger btn-outline">Save <i class="fa fa-save"></i></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

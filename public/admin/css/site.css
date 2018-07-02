@@ -1,0 +1,67 @@
+ /*style sheet*/
+@font-face {
+    font-family: 'SegoeUILight';
+    src: url('../fonts/Segoe-UI-Light.ttf') format('truetype');
+}
+
+h1, h2 {
+    font-family: 'SegoeUILight' !important;
+    font-weight: 100 !important;
+}
+
+.profile-element > span img {
+    width: 48px;
+    height: 48px;
+}
+
+.error-reporting {
+    display: none;
+}
+
+.modal-footer .sk-spinner {
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.modal-footer .sk-spinner,
+.modal-footer button {
+    vertical-align: middle !important;
+}
+
+.sk-spinner.enter {
+    width: 70px;
+    height: 70px;
+    background: #3c763d;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    display: none;
+}
+
+.carousel-caption .brand-logo img {
+    border-radius: 5px;
+    width: 200px !important;
+}
+
+.members-grid img {
+    width: 100%;
+}
+
+.top-nav {
+    padding: 20px 25px 5px 25px !important;
+}
+
+.members-grid {
+    padding-bottom: 25px;
+}
+
+.statistic {
+    padding-top: 15px;
+}
+
+fieldset legend {
+    font-family: 'SegoeUILight' !important;
+    color: rgb(38, 93, 197);
+    border-color: rgb(38, 93, 197);
+}

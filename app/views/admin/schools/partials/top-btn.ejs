@@ -1,0 +1,13 @@
+<div class="row wrapper border-bottom white-bg page-heading schools-btn top-nav">
+    <button class="btn btn-outline btn-success dim" data-action="add" type="button">
+        Add School
+    </button>
+</div>
+
+<script>
+    $(document).ready(function() {
+        $('.schools-btn button').on('click', function() {
+            $('#add-school-model').modal({backdrop: "static"});
+        });
+    });
+</script>

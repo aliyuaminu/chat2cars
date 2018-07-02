@@ -1,0 +1,51 @@
+<% include ../partials/top-btn %>
+<div class="wrapper wrapper-content animated fadeInRight">
+    <div class="row">
+        <div class="col-lg-12">
+            <div class="ibox float-e-margins">
+                <div class="ibox-content">
+                    <% if(schools == null) { %>
+                        <h1 style="text-align: center;">No single school yet...</h1>
+                    <% } else { %>
+                    <div class="table-responsive">
+                        <table class="table table-striped">
+                            <thead>
+                                <tr>
+                                    <th>#</th>
+                                    <th>Title </th>
+                                    <th>State </th>
+                                    <th>LGA</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <% schools.forEach((school, key) => { %>
+                                <tr>
+                                    <td><%= key + 1 %></td>
+                                    <td><%= school.title %></td>
+                                    <td><%= school.state %></td>
+                                    <td><%= school.lga %></td>
+                                    <td>
+                                        <!--<button type="button" class="btn btn-outline btn-success btn-circle"><i class="fa fa-search"></i></button>-->
+                                        <button type="button" class="btn btn-outline btn-danger btn-circle remove-school" data-id="<%= school.id %>"> 
+                                            <i class="fa fa-trash"></i>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <% }) %>
+                            </tbody>
+                        </table>
+                    </div>
+                    <% } %>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    let script  = document.createElement('script');
+    script.type = 'application/javascript';
+    script.src  = '/js/schools.js';
+    document.body.appendChild(script);
+</script>

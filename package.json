@@ -1,0 +1,27 @@
+{
+  "name": "chat2cars",
+  "version": "1.0.0",
+  "description": "Chat2Cars",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Aliyu Aminu - aliyuaminu14@outlook.com",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt-nodejs": "0.0.3",
+    "body-parser": "*",
+    "connect-flash": "^0.1.1",
+    "cookie-parser": "^1.4.3",
+    "ejs": "^2.5.7",
+    "express": "^4.16.2",
+    "express-session": "^1.15.6",
+    "moment": "^2.19.2",
+    "mongoose": "^5.1.2",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0",
+    "passport-local": "^1.0.0",
+    "sendgrid": "^5.2.3",
+    "uuid": "^3.1.0"
+  }
+}

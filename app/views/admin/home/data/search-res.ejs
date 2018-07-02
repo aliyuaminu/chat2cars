@@ -1,0 +1,111 @@
+<div class="tabs-container">
+    <ul class="nav nav-tabs">
+        <li class="active"><a data-toggle="tab" href="#members"><i class="fa fa-users"></i> Members</a></li>
+        <li class=""><a data-toggle="tab" href="#masjids"><i class="fa fa-leaf"></i> Masjids</a></li>
+        <li class=""><a data-toggle="tab" href="#schools"><i class="fa fa-university"></i> Schools</a></li>
+    </ul>
+    <div class="tab-content">
+        <div id="members" class="tab-pane active">
+            <div class="panel-body">
+                <strong>Result for: </strong><i><%= keywords %></i>
+                <% if (result.members.length == 0) { %>
+                <h1 style="text-align: center;">No single members yet...</h1>
+                <% } else { %>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Name </th>
+                                <th>Phone </th>
+                                <th>State </th>
+                                <th>LGA</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% result.members.forEach((member, key) => { %>
+                            <tr>
+                                <td><%= key + 1 %></td>
+                                <td><%= member.fullname %></td>
+                                <td><%= member.mobile %></td>
+                                <td><%= member.state %></td>
+                                <td><%= member.lga %></td>
+                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div id="masjids" class="tab-pane">
+            <div class="panel-body">
+                <strong>Result for: </strong><i><%= keywords %></i>
+
+                <% if(result.masjids.length == 0) { %>
+                    <h1 style="text-align: center;">No single masjids yet...</h1>
+                <% } else { %>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Title </th>
+                                <th>State </th>
+                                <th>LGA</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% result.masjids.forEach((masjid, key) => { %>
+                            <tr>
+                                <td><%= key + 1 %></td>
+                                <td><%= masjid.title %></td>
+                                <td><%= masjid.state %></td>
+                                <td><%= masjid.lga %></td>
+                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+                <% } %>
+            </div>
+        </div>
+        <div id="schools" class="tab-pane">
+            <div class="panel-body">
+                <strong>Result for: </strong><i><%= keywords %></i>
+                <% if (result.schools.length == 0) { %>
+                    <h1 style="text-align: center;">No single school yet...</h1>
+                <% } else { %>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>#</th>
+                                <th>Title </th>
+                                <th>State </th>
+                                <th>LGA</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <% result.schools.forEach((school, key) => { %>
+                            <tr>
+                                <td><%= key + 1 %></td>
+                                <td><%= school.title %></td>
+                                <td><%= school.state %></td>
+                                <td><%= school.lga %></td>
+                                <td><a href="#"><i class="fa fa-check text-navy"></i></a></td>
+                            </tr>
+                            <% }) %>
+                        </tbody>
+                    </table>
+                </div>
+                <% } %>
+            </div>
+        </div>
+    </div>
+</div>

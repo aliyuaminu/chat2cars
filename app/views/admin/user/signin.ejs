@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Sign In</title>
+        <% include ../_partials/head %>
+    </head>
+
+    <body class="gray-bg">
+        
+        <div class="sk-spinner enter sk-spinner-pulse"></div>
+
+        <div class="middle-box text-center loginscreen animated fadeInDown">
+            <div>
+                <div><h1 class="logo-name">JIBWIS-NG</h1></div>
+                <form class="m-t" role="form" action="/users/signin/api" method="post" >
+                    <!--<div class="alert alert-danger alert-dismissable error-reporting">
+                        <button aria-hidden="true" data-dismiss="alert" class="close" type="button">×</button>
+                        <a class="alert-link" href="#">Alert Link</a>.
+                    </div>-->
+                    <div class="form-group">
+                        <input type="text" class="form-control btn-outline" name="username" placeholder="Username" id="username" >
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control btn-outline" name="password" placeholder="Password" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-success block full-width m-b btn-outline">
+                        Log In <i class="fa fa-sign-in"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+        <% include ../_partials/js %>
+    </body>
+
+</html>

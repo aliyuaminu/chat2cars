@@ -1,0 +1,239 @@
+<!-- =-=-=-=-=-=-= Preloader =-=-=-=-=-=-= -->
+<div class="preloader"></div>
+<!-- =-=-=-=-=-=-= Color Switcher =-=-=-=-=-=-= -->
+<div class="color-switcher" id="choose_color">
+    <a href="#." class="picker_close"><i class="fa fa-gear"></i></a>
+    <h5>STYLE SWITCHER</h5>
+    <div class="theme-colours">
+        <p> Choose Colour style </p>
+        <ul>
+            <li><a href="#." class="defualt" id="defualt"></a></li>
+            <li><a href="#." class="green" id="green"></a></li>
+            <li><a href="#." class="purple" id="purple"></a></li>
+        </ul>
+    </div>
+    <div class="clearfix"> </div>
+</div>
+<!-- =-=-=-=-=-=-= Main Header =-=-=-=-=-=-= -->
+<div class="colored-header">
+    <!-- Top Bar -->
+    <div class="header-top dark">
+        <div class="container">
+        <div class="row">
+            <!-- Header Top Left -->
+            <div class="header-top-left col-md-6 col-sm-6 col-xs-12 hidden-xs">
+                <ul class="listnone">
+                    <li><a href="/about"><i class="fa fa-heart-o" aria-hidden="true"></i> About</a></li>
+                    <li><a href="/faqs"><i class="fa fa-folder-open-o" aria-hidden="true"></i> FAQS</a></li>
+                    <!--<li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><i class="fa fa-globe" aria-hidden="true"></i> Language <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">English</a></li>
+                        <li><a href="#">Swedish</a></li>
+                        <li><a href="#">Arabic</a></li>
+                        <li><a href="#">Russian</a></li>
+                        <li><a href="#">chinese</a></li>
+                    </ul>
+                    </li>-->
+                </ul>
+            </div>
+            <!-- Header Top Right Social -->
+            <div class="header-right col-md-6 col-sm-6 col-xs-12 ">
+                <div class="pull-right">
+                    <ul class="listnone">
+                        <% if (logedin == 0) { %>
+                        <li><a href="/signin"><i class="fa fa-sign-in"></i> Sign in</a></li>
+                        <li class="hidden-xs hidden-sm"><a href="/signup"><i class="fa fa-unlock" aria-hidden="true"></i> Sign up</a></li>
+                        <% } else { %>
+                        <li class="dropdown">
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false"><img class="img-circle resize" alt="" src="/img/users/3.jpg"> <span class="myname hidden-xs"> <%= user.fullname %> </span> <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a href="/profile">Profile</a></li>
+                                <!--<li><a href="/archives">Archives</a></li>
+                                <li><a href="/ads/active">Active Ads</a></li>
+                                <li><a href="/ads/favourite">Favourite Ads</a></li>-->
+                                <li><a href="/users/signout">Sign out</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/post/ad" class="btn btn-theme">Sell Your Car</a></li>
+                        <% } %>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <!-- Top Bar End -->
+    <!-- Navigation Menu -->
+    <div class="clearfix"></div>
+    <!-- menu start -->
+    <nav id="menu-1" class="mega-menu">
+        <!-- menu list items container -->
+        <section class="menu-list-items">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12">
+                    <!-- menu logo -->
+                    <ul class="menu-logo">
+                    <li>
+                        <a href="/"> <span>Chat</span><span class="m">2</span><span>Cars</span> <!--<img src="images/logo.png" alt="logo">--> </a>
+                    </li>
+                    </ul>
+                    <!-- menu links -->
+                    <ul class="menu-links">
+                    <!-- active class -->
+                    <li><a href="/">Home</a></li>
+                    <li>
+                        <a href="javascript:void(0)"> Cars <i class="fa fa-angle-down fa-indicator"></i></a>
+                        <div class="drop-down grid-col-12">
+                            <!--grid row-->
+                            <div class="grid-row">
+                                <!--grid column 3-->
+                                <div class="grid-col-2">
+                                <h3>Condition</h3>
+                                <ul>
+                                    <li><a href="listing.html">New</a></li>
+                                    <li><a href="listing-4.html">Used</a></li>
+                                    <li><a href="listing-3.html">Reconditioned </a></li>
+                                    <li><a href="#">Featured Cars </a></li>
+                                </ul>
+                                </div>
+                                <div class="grid-col-6">
+                                <h3>Brands</h3>
+                                <ul class="by-make list-inline">
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/0.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/1.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/2.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/3.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/4.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/5.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/7.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/8.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/9.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                        <img src="/img/brands/11.png" class="img-responsive" alt="Brand Image">
+                                        </a>
+                                    </li>
+                                </ul>
+                                </div>
+                                <div class="grid-col-4">
+                                <h3>Body Type</h3>
+                                <ul class="list-inline by-category ">
+                                    <li>
+                                        <a href="#">
+                                            <img alt="Hybrid" src="/img/bodytype/1.png">
+                                            Convertible
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="Hybrid" src="/img/bodytype/2.png">
+                                            Coupe
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="Hybrid" src="/img/bodytype/3.png">
+                                            Sedan
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="Hybrid" src="/img/bodytype/4.png">
+                                            Van/Minivan
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="Hybrid" src="/img/bodytype/5.png">
+                                            Truck
+                                        </a> 
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img alt="Hybrid" src="/img/bodytype/6.png">
+                                            Hybrid
+                                        </a> 
+                                    </li>
+                                    
+                                </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!--<li>
+                        <a href="javascript:void(0)">Reviews <i class="fa fa-angle-down fa-indicator"></i></a>
+                        <!- drop down multilevel  ->
+                        <ul class="drop-down-multilevel">
+                            <li><a href="reviews.html">Expert Reviews</a></li>
+                            <li><a href="review-detail.html">Review Detial</a></li>
+                        </ul>
+                    </li>-->
+                    <!--<li>
+                        <a href="javascript:void(0)">Compare <i class="fa fa-angle-down fa-indicator"></i></a>
+                        <!- drop down multilevel  ->
+                        <ul class="drop-down-multilevel">
+                            <li><a href="compare.html">Car Comparison</a></li>
+                            <li><a href="compare-1.html">Comparison Style 2</a></li>
+                            <li><a href="compare-2.html">Comparison Detial</a></li>
+                        </ul>
+                    </li>-->
+                    </ul>
+                    <ul class="menu-search-bar">
+                    <li>
+                        <a>
+                            <div class="contact-in-header clearfix">
+                                <i class="flaticon-customer-service"></i>
+                                <span>
+                                Call Us Now
+                                <br>
+                                <strong>111 222 333 444</strong>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        </section>
+    </nav>
+    <!-- menu end -->
+</div>
